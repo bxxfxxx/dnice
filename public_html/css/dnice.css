@@ -1,0 +1,136 @@
+#body{
+    background: url(../img/bkg-1000.png) top no-repeat #111;
+}
+
+#wrapper{
+    display: block;
+    width: 560px;
+    margin: 120px auto;
+    padding: 40px;
+    position: relative;
+    font-family: Calibri;
+}
+
+#canvas{
+    position: absolute;
+    width: 560px;
+    height: 327px;
+    display: block;
+    pointer-events: none;
+}
+
+#dices{
+    margin: auto;
+}
+
+#buttons{
+    width: 540px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.button{
+    background-color: #ccc;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #aaaa11;
+}
+
+.button:hover{
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+#buttons #reset{
+    float: left;
+    margin-left: 10px;
+}
+
+#reset-button{
+    width: 90px;
+}
+
+#buttons #roll{
+    float: right;
+}
+
+#dice-cup{
+    width: 80px;
+    cursor: pointer;
+}
+
+#results{
+    border: 1px solid black;
+    width: 240px;
+    height: 140px;
+    display: inline-block;
+    background-color: #aaaa22;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#results .critic{
+    color: red;
+    text-shadow: 0px 0px 3px #ff7777;
+}
+#results .fumbled{
+    color: darkgreen;
+    text-shadow: 0px 0px 3px darkgreen;
+}
+
+.plus, .minus{
+    cursor: pointer;
+    display: none;
+}
+
+input.disabled{
+    background-color: #111;
+    opacity: 1;
+    width: 40px;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 2px #444;
+    color: white;
+    font-size: 26px;
+}
+
+.dice{
+    width:80px;
+    height:75px;
+    cursor: ns-resize;
+}
+
+#dices thead tr td,
+#dices tbody tr td,
+#dices tfoot tr td{
+    text-align: center;
+    padding: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+input[dice="4"]{
+    background-color: #107642;
+}
+input[dice="6"]{
+    background-color: #f8692d;
+}
+input[dice="8"]{
+    background-color: #e94234;
+    color: #333;
+}
+input[dice="10"]{
+    background-color: #cdc6c4;
+    color: #333;
+}
+input[dice="12"]{
+    background-color: #17171b;
+}
+input[dice="20"]{
+    background-color: #3cdd54;
+    color: #333;
+}
